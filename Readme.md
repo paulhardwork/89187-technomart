@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Пашка Ярин](https://up.htmlacademy.ru/htmlcss/21/user/89187).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Власов](https://htmlacademy.ru/profile/amaringo).
 
 ---
 
