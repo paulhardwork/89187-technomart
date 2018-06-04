@@ -6,12 +6,14 @@
     </head>
     <body>
         <header class="page-header">
-            <div class="site-logo">Техномарт</div> <!-- По макету вроде как это блок с текстом, а не картинка, или я ошибаюсь? -->
-            <span>Поиск:</span>    <!--Тут же поле формы будет?-->
-            <span class="top-info">Закладки: 0</span>
-            <span class="top-info">Корзина: 0</span>
-            <a class="btn btn-make-order" href="#">Оформить заказ</a>
-            <section class="header-info">
+            <div class="page-header-top">
+                <div class="site-logo">Техномарт</div> <!-- По макету вроде как это блок с текстом, а не картинка, или я ошибаюсь? -->
+                <span>Поиск:</span>    <!--Тут же поле формы будет?-->
+                <span class="top-info">Закладки: 0</span>
+                <span class="top-info">Корзина: 0</span>
+                <a class="btn btn-make-order" href="#">Оформить заказ</a>
+            </div>
+            <section class="page-header-info">
                 <h1>Интернет-магазин строительных материалов и инструментов для дома</h1>
                 <p class="telephone-number">+7(812)555-05-55</p>
                 <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8</p>
@@ -20,8 +22,8 @@
                     <li><a href="#">Регистрация</a></li>
                 </ul>
             </section>
-            <nav class="main-menu">
-                <ul>
+            <nav class="page-header-menu">
+                <ul class="main-menu">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="company.html">Компания</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
@@ -36,23 +38,23 @@
         <main>
             <section class="features">
                 <ul class="features-list">
-                    <li class="feature-item feature-materials">
+                    <li class="features-list-item features-materials">
                         <p class="type-item">Материалы</p>
                         <a class="btn btn-feature" href="#">На любой вкус</a>
                     </li>
-                    <li class="feature-item feature-tools">
+                    <li class="features-list-item features-tools">
                         <p class="type-item">Инструменты</p>
                         <a class="btn btn-feature" href="#">На все случаи</a>
                     </li>
-                    <li class="feature-item feature-technique">
+                    <li class="features-list-item features-technique">
                         <p class="type-item">Техника</p>
                         <a class="btn btn-feature" href="#">Для стройки</a>
                     </li>
-                    <li class="feature-item feature-sales">
+                    <li class="features-list-item features-sales">
                         <p class="type-item">Скидки 50%</p>
                         <a class="btn btn-feature" href="#">На 350 товаров</a>
                     </li>
-                    <li class="feature-item feature-delivery">
+                    <li class="features-list-item features-delivery">
                         <p class="type-item">Доставка</p>
                         <a class="btn btn-feature" href="#">Бесплатно</a>
                     </li>
@@ -139,11 +141,11 @@
                     </div>
                     <div class="services-slider-item">
                         <span class="services-slider-item-head">Гарантия</span>
-                        <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+                        <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами!</p>
                     </div>
                     <div class="services-slider-item">
                         <span class="services-slider-item-head">Кредит</span>
-                        <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+                        <p>Залезть в долговую яму стало проще!<br>Кредитные специалисты придут вам на помощь!</p>
                         <a class="btn" href="#">Отправить заявку</a> 
                     </div>
                 </div>
@@ -170,7 +172,7 @@
         </main>
         
         <footer class="page-footer">
-            <div class="footer-menu">
+            <div class="footer-menu-top">
                 <img src="img/logo.jpg" width="" height="" alt="Логотип">
                 <ul class="footer-list-top">
                     <li><a href="company.html">Компания</a></li>
@@ -179,8 +181,33 @@
                     <li><a href="delivery.html">Доставка</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
+            </div>
+            <div class="footer-menu-bottom">
                 <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
+                <ul class="footer-list-bottom">
+                    <li><a href="#">Материалы</a></li>
+                    <li><a href="#">Техника</a></li>
+                    <li><a href="#">Инструмент</a></li>
+                    <li><a href="#">Спецпредложения</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy;2010-2017 Компания &laquo;Техномарт&raquo;<br>Все права защищены</p>
+                <div class="footer-copyright-social">
+                    <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
+                    <a class="social-btn social-btn-fb" href="#">Facebook</a>
+                    <a class="social-btn social-btn-inst" href="#">Instagram</a>
+                </div>
+                <p>Обратная связь:<br><a class="footer-hyper" href="#">mail@htmalacademy.ru</a></p>
+                <p>Разработано -<br><a class="footer-hyper" href="https://htmlacademy.ru/intensive/htmlcss">htmalacademy.ru</a></p>
             </div>
         </footer>
+        
+        <section class="map-popup">
+            <!-- Контентное изображение? -->
+        </section>
+        <section class="window-write-us">
+            <!-- Форма -->
+        </section>
     </body>
 </html>
