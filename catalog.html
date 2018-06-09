@@ -7,9 +7,9 @@
     <body>
         <header class="page-header">
             <div class="page-header-top">
-                <div class="site-logo">Техномарт</div>
+                <div class="site-logo"><a href="index.html">Техномарт</a></div>
                 <form class="site-search" action="#" method="get" name="site-search">
-                    <button class="btn-search" name="site-search"><img src="img/icon-search.svg" width="17" height="17" alt="Найти"></button>
+                    <button class="btn-search"><img src="img/icon-search.svg" width="17" height="17" alt="Найти"></button>
                     <input type="search" name="site-search" placeholder="Поиск:">
                 </form>
                 <a class="top-info" href="#">Закладки:<span class="quantity">0</span></a>
@@ -59,8 +59,25 @@
             <h2 class="catalog-head">Перфораторы</h2>
             <div class="filter-container">
                 <span class="filter-head">Фильтр:</span>
-                <form action="#" method="get" name="product-filter">
-                <!-- Здесь будет форма -->
+                <form class="product-filter" action="#" method="get" name="product-filter">
+                    <div class="field-container">
+                        <span class="filter-block-head">Цена:</span>
+                        <input type="range" name="price-range" id="price-range">
+                    </div>
+                    <div class="field-container">
+                        <span class="filter-block-head">Производители:</span>
+                        <label><input type="checkbox" name="bosch" checked>BOSCH</label>
+                        <label><input type="checkbox" name="interskol">ИНТЕРСКОЛ</label>
+                        <label><input type="checkbox" name="makita" checked>MAKITA</label>
+                        <label><input type="checkbox" name="dewalt">DEWALT</label>
+                        <label><input type="checkbox" name="hitachi">HITACHI</label>
+                    </div>
+                    <div class="field-container">
+                        <span class="filter-block-head">Питание:</span>
+                        <label><input type="radio" name="energy" value="accu">Аккумуляторные</label>
+                        <label><input type="radio" name="energy" value="network">Сетевые</label>
+                    </div>
+                    <button class="btn btn-form">Показать</button>
                 </form>
             </div>
             <section class="products-container">
@@ -216,7 +233,7 @@
             
         <section class="add-cart">
             <p class="add-message">Товар добавлен в корзину!</p>
-            <div class="cart-button-container">
+            <div class="button-container">
                 <a class="btn btn-section" href="#">Оформить заказ</a>
                 <a class="btn btn-continue" href="#">Продолжить покупки</a>    
             </div>
