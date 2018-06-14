@@ -25,6 +25,14 @@ a {
     border: none;
 }
 
+.btn:hover {
+    background-color: #ca2c37;
+}
+
+.btn:active {
+    background-color: #ba2732;
+}
+
 .page-header {
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 17px;
