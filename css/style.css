@@ -46,10 +46,13 @@ a {
     color: #ffffff;
 }
 
-.site-logo {
+.site-logo,
+.site-logo-footer {
+    font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 24px;
     line-height: 24px;
     text-transform: uppercase;
+    color: #ffffff;
     background-color: #ee3643;
 }
 
@@ -85,9 +88,9 @@ a {
 }
 
 .site-search input[type="search"] {
+    color: #ffffff;
     background-color: #293449;
     border: none;
-    color: #ffffff;
     outline: none;
 }
 
@@ -112,7 +115,7 @@ a {
     color: #32425c;
 }
 
-.user-block,
+.user-login,
 .user-menu,
 .main-menu {
     margin: 0;
@@ -123,27 +126,22 @@ a {
     list-style: none;
 }
 
-.user-block li {
-    background-color: #ffffff;
-}
-
-.user-block a {
+.user-login a {
+    display: block;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
+    background-color: #ffffff;
 }
 
-.user-block a:hover {
+.user-login a:hover,
+.user-menu a:hover {
     color: #ee3643;
 }
 
-.user-block a:active {
-    color: #000000;
-    opacity: 0.3;
-}
-
-.user-menu li {
-    background-color: inherit;
+.user-login a:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
 }
 
 .user-menu li:first-child {
@@ -151,10 +149,15 @@ a {
 }
 
 .user-menu a {
+    display: block;
     font-size: 16px;
     line-height: 18px;
     color: #32425c;
     text-decoration: underline;
+}
+
+.user-menu a:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .main-menu {
@@ -171,11 +174,8 @@ a {
 }
 
 .main-menu a:active {
+    color: rgba(255, 255, 255, 0.5);
     background-color: #1d2739;
-}
-
-.features-list-item {
-    background-color: #000000;
 }
 
 .type-item {
@@ -184,4 +184,180 @@ a {
     line-height: 30px;
     font-weight: 700;
     color: #ffffff;
+}
+
+.features-materials {
+    background-color: #ffbf47; 
+}
+
+.features-tools {
+    background-color: #3bbce3; 
+}
+
+.features-technique {
+    background-color: #dc91d8; 
+}
+
+.features-sales {
+    background-color: #8ed78f; 
+}
+
+.features-delivery {
+    background-color: #ffc047; 
+}
+
+.btn-feature {
+/*Как эти кнопки делать?*/
+}
+
+.feature-slider-pinch {
+    background-color: #ab9a85;
+    background-image: url(../img/slider-punch.jpg);
+    background-repeat: no-repeat;
+}
+
+.feature-slider-drill {
+    background-color: #ab9a85;
+    background-image: url(../img/slider-drill.jpg);
+    background-repeat: no-repeat;
+}
+
+.slide-head {
+    font-family: "Cuprum", "Verdana", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.slide-text {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.big-header {
+    font-family: "Cuprum", "Verdana", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+.another-header {
+    color: #000000;
+}
+
+.popular-head {
+    background-color: #f9f5f0;
+}
+
+.product-name {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.previous-price {
+    font-size: 17px;
+    line-height: 18px;
+    text-decoration: line-through;
+    color: #a9a9a9;
+}
+
+.current-price {
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.services {
+    background-color: #f4f8f9;
+}
+
+.services-slider-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.services-slider-list li {
+    font-family: "Cuprum", "Verdana", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #ffffff;
+    background-color: #32425c;
+}
+
+.services-slider-list li:hover {
+    background-color: #293449;
+}
+
+.services-slide-head {
+    font-family: "Cuprum", "Verdana", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #32425c;
+}
+
+.services-slider-delivery {
+    background-image: url(../img/delivery-pic.png);
+    background-repeat: no-repeat;
+}
+
+.services-slider-guarantee {
+    background-image: url(../img/guarantee-pic.png);
+    background-repeat: no-repeat;
+}
+
+.services-slider-credit {
+    background-image: url(../img/credit-pic.png);
+    background-repeat: no-repeat;
+}
+
+.page-footer {
+    font-family: "Cuprum", "Verdana", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: #32425c;
+}
+
+.footer-list-top,
+.footer-list-bottom {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.footer-list-bottom a,
+.footer-copyright a {
+    color: #ffd180;
+}
+
+.footer-copyright {
+    font-family: "Cuprum", "Verdana", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    background-color: #293449;
+}
+
+.write-us label {
+    font-family: "Cuprum", "Verdana", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.button-container {
+    background-color: #f4f4f4;
+}
+
+.add-message {
+    font-family: "Cuprum", "Verdana", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
 }
