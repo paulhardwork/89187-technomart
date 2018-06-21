@@ -13,6 +13,11 @@ a {
     color: #ffffff;
 }
 
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
 .btn {
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 14px;
@@ -64,11 +69,13 @@ a {
     background-color: #ba2732;
 }
 
-.top-info:hover {
+.btn-head-bookmark:hover,
+.btn-head-cart:hover {
     background-color: #212a3a;
 }
 
-.top-info:active {
+.btn-head-bookmark:active,
+.btn-head-cart:active {
     background-color: #161d29;
     opacity: 0.6;
 }
@@ -120,9 +127,6 @@ a {
 .main-menu {
     margin: 0;
     padding: 0;
-}
-
-.user-block {
     list-style: none;
 }
 
@@ -144,8 +148,8 @@ a {
     background-color: #ffffff;
 }
 
-.user-menu li:first-child {
-    list-style: none;
+.user-menu li:not(:first-child) {
+    list-style: circle;
 }
 
 .user-menu a {
@@ -158,10 +162,6 @@ a {
 
 .user-menu a:active {
     color: rgba(0, 0, 0, 0.3);
-}
-
-.main-menu {
-    list-style: none;
 }
 
 .main-menu a {
@@ -207,7 +207,7 @@ a {
 }
 
 .btn-feature {
-/*Как эти кнопки делать?*/
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .feature-slider-pinch {
@@ -269,7 +269,7 @@ a {
 .current-price {
     font-size: 17px;
     line-height: 18px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .services {
@@ -316,6 +316,87 @@ a {
 .services-slider-credit {
     background-image: url(../img/credit-pic.png);
     background-repeat: no-repeat;
+}
+
+.catalog-menu,
+.sort-parameters {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.catalog-menu a,
+.catalog-menu li {
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.filter-head {
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #f7f3ec;
+}
+
+.field-container {
+    border: none;
+}
+
+.field-container legend {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.field-container input[type="text"] {
+    font-size: 17px;
+    line-height: 18px;
+    background-color: #f7f3ec;
+}
+
+.field-container label {
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.btn-form {
+    font-family: "PT Sans", "Verdana", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.products-sort {
+    background-color: #f7f3ec;
+}
+
+.sort-parameters a {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px dotted #ee3643;
+}
+
+.btn-buy {
+    background-color: #63a63e;
+}
+
+.btn-tobookmark {
+    color: #32425c;
+    background-color: #e5e5e5;
+    border: 3px solid #63a63e;
+}
+
+.page-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.info-about-product {
+    background-color: #f2f6f8;
 }
 
 .page-footer {
