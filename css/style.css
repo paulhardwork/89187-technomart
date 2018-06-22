@@ -1,4 +1,5 @@
 body {
+    min-width: 1200px;
     margin: 0;
     padding: 0;
     font-family: "PT Sans", "Verdana", sans-serif;
@@ -16,6 +17,7 @@ a {
 .container {
     width: 940px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .btn {
@@ -51,6 +53,11 @@ a {
     color: #ffffff;
 }
 
+.page-header-top .container {
+    display: flex;
+    margin-bottom: 45px;
+}
+
 .site-logo,
 .site-logo-footer {
     font-family: "Cuprum", "Verdana", sans-serif;
@@ -61,12 +68,33 @@ a {
     background-color: #ee3643;
 }
 
+.site-logo {
+    width: 220px;
+    height: 40px;
+    text-align: center;
+}
+
 .site-logo:hover {
     background-color: #ca2c37;
 }
 
 .site-logo:active{
     background-color: #ba2732;
+}
+
+.site-search {
+    width: 240px;
+    margin-right: 45px;
+}
+
+.btn-head-bookmark {
+    width: 125px;
+    margin-right: 35px;
+}
+
+.btn-head-cart {
+    width: 125px;
+    margin-right: 10px;
 }
 
 .btn-head-bookmark:hover,
@@ -81,6 +109,7 @@ a {
 }
 
 .btn-make-order {
+    width: 150px;
     text-transform: none;
     background-color: #63a63e;
 }
@@ -101,12 +130,27 @@ a {
     outline: none;
 }
 
+.page-header-info .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .header-top {
+    width: 200px;
+    margin: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 0;
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
     line-height: 23px;
     color: #ee3643;
+}
+
+.page-header-contacts {
+    width: 300px;
+    margin-right: 35px;
 }
 
 .telephone-number {
@@ -120,6 +164,15 @@ a {
     font-size: 14px;
     line-height: 24px;
     color: #32425c;
+}
+
+.user-block {
+    width: 300px;
+}
+
+.page-header-menu {
+    width: 940px;
+    margin-top: 40px;
 }
 
 .user-login,
