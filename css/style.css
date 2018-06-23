@@ -238,13 +238,12 @@ a {
 .features-list {
     display: flex;
     justify-content: space-between;
-    align-items: space-between;
     flex-wrap: wrap;
 }
 
 .features-list-item {
     width: 300px;
-    min-height: 125px;
+    margin-bottom: 20px;
 }
 
 .type-item {
@@ -253,6 +252,11 @@ a {
     line-height: 30px;
     font-weight: 700;
     color: #ffffff;
+}
+
+.feature-column-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .features-materials {
@@ -281,7 +285,6 @@ a {
 
 .features-slider {
     width: 620px;
-    min-height: 265px;
 }
 
 .feature-slider-pinch {
