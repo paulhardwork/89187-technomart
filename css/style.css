@@ -231,6 +231,22 @@ a {
     background-color: #1d2739;
 }
 
+.features {
+    margin-bottom: 55px;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+}
+
+.features-list-item {
+    width: 300px;
+    min-height: 125px;
+}
+
 .type-item {
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 24px;
@@ -261,6 +277,11 @@ a {
 
 .btn-feature {
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+.features-slider {
+    width: 620px;
+    min-height: 265px;
 }
 
 .feature-slider-pinch {
@@ -303,7 +324,17 @@ a {
 }
 
 .popular-head {
+    margin-bottom: 20px;
     background-color: #f9f5f0;
+}
+
+.products-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products-list-item {
+    width: 220px;
 }
 
 .product-name {
@@ -325,8 +356,36 @@ a {
     color: #000000;
 }
 
+.popular-developers-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 85px;
+}
+
+
+.popular-developers-item {
+    width: 220px;
+    min-height: 145px;
+}
+
 .services {
     background-color: #f4f8f9;
+    padding-top: 1px;
+}
+
+.services-head {
+    margin-top: 70px;
+    margin-bottom: 75px;
+}
+
+.services-slider-wrapper {
+    display: flex;
+    
+}
+
+.services-slider-list-container {
+    margin-right: 80px;
 }
 
 .services-slider-list {
@@ -349,6 +408,8 @@ a {
 }
 
 .services-slide-head {
+    margin: 0;
+    padding: 0;
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 36px;
     line-height: 36px;
@@ -369,6 +430,12 @@ a {
 .services-slider-credit {
     background-image: url(../img/credit-pic.png);
     background-repeat: no-repeat;
+}
+
+.services + .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
 }
 
 .catalog-menu,
@@ -460,12 +527,37 @@ a {
     background-color: #32425c;
 }
 
+.page-footer .container {
+    margin-bottom: 50px;
+}
+
+.footer-menu-top,
+.footer-menu-bottom {
+    display: flex;
+    padding-top: 1px;
+}
+
+.site-logo-footer {
+    width: 220px;
+    height: 65px;
+    margin-right: 175px;
+}
+
 .footer-list-top,
 .footer-list-bottom {
     margin: 0;
     padding: 0;
     list-style: none;
-    
+}
+
+.footer-list-top {
+    margin-top: 40px;
+}
+
+.footer-menu-bottom p {
+    margin: 0;
+    padding: 0;
+    margin-right: 90px;
 }
 
 .footer-list-bottom a,
@@ -478,6 +570,34 @@ a {
     font-size: 16px;
     line-height: 18px;
     background-color: #293449;
+}
+
+.footer-copyright .container {
+    display: flex;
+}
+
+.copyright {
+    width: 260px;
+    margin-right: 150px;
+}
+
+.footer-copyright p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-copyright-social {
+    margin-right: 115px;
+}
+
+.footer-copyright-urls {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.footer-copyright-urls p:first-child {
+    margin-right: 50px;
 }
 
 .write-us label {
