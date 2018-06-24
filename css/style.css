@@ -320,6 +320,11 @@ a {
     line-height: 30px;
     text-transform: uppercase;
     color: #32425c;
+    background-color: #f2f6f8;
+}
+
+.bigheader-padding {
+    padding: 30px;
 }
 
 .another-header {
@@ -441,6 +446,14 @@ a {
     margin-bottom: 85px;
 }
 
+.index-main {
+    margin-top: 60px;
+}
+
+.catalog-main {
+    margin-top: 25px;
+}
+
 .catalog-menu,
 .sort-parameters {
     margin: 0;
@@ -453,6 +466,15 @@ a {
     line-height: 18px;
     text-transform: uppercase;
     color: #000000;
+}
+
+.catalog-content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-container {
+    width: 220px;
 }
 
 .filter-head {
@@ -490,6 +512,15 @@ a {
     line-height: 18px;
     color: #000000;
     background-color: #ffffff;
+}
+
+.products-container {
+    width: 700px;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .products-sort {
