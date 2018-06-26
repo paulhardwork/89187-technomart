@@ -21,6 +21,7 @@ a {
 }
 
 .btn {
+    padding: 10px 50px;
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -30,6 +31,7 @@ a {
     color: #ffffff;
     background-color: #ee3643;
     border: none;
+    border-radius: 4px;
 }
 
 .btn:hover {
@@ -164,10 +166,12 @@ a {
 
 .btn-make-order {
     width: 150px;
+    padding: 0;
     font-size: 17px;
     line-height: 40px;
     text-transform: none;
     background-color: #63a63e;
+    border-radius: 0;
 }
 
 .btn-make-order:hover {
@@ -338,7 +342,7 @@ a {
 
 .features {
     margin-top: 60px;
-    margin-bottom: 55px;
+    margin-bottom: 35px;
 }
 
 .features-list {
@@ -348,11 +352,17 @@ a {
 }
 
 .features-list-item {
-    width: 300px;
+    position: relative;
+    width: 250px;
+    min-height: 83px;
     margin-bottom: 20px;
+    padding: 20px 25px;
 }
 
 .type-item {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 24px;
     line-height: 30px;
@@ -367,6 +377,26 @@ a {
 
 .features-materials {
     background-color: #ffbf47; 
+}
+
+.features-materials::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 240px;
+    width: 60px;
+    height: 60px;
+    background: url("../img/new-flag.png") 0 0 no-repeat;
+}
+
+.features-materials::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 43px;
+    width: 45px;
+    height: 65px;
+    background: url("../img/icon-features-1.svg") 0 0 no-repeat;
 }
 
 .features-tools {
@@ -386,21 +416,33 @@ a {
 }
 
 .btn-feature {
+    padding: 10px 15px;
     background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+}
+
+.btn-feature:hover,
+.btn-feature:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-feature:active {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .features-slider {
     width: 620px;
+    margin-bottom: 20px;
 }
 
 .feature-slider-pinch {
-    display: none;
     background-color: #ab9a85;
     background-image: url(../img/slider-punch.jpg);
     background-repeat: no-repeat;
 }
 
 .feature-slider-drill {
+    display: none;
     background-color: #ab9a85;
     background-image: url(../img/slider-drill.jpg);
     background-repeat: no-repeat;
@@ -421,13 +463,12 @@ a {
     color: #ffffff;
 }
 
-.big-header {
+.section-header {
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
     color: #32425c;
-    background-color: #f2f6f8;
 }
 
 .bigheader-padding {
@@ -439,8 +480,23 @@ a {
 }
 
 .popular-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90px;
+    padding-left: 30px;
+    padding-right: 24px;
     margin-bottom: 20px;
     background-color: #f9f5f0;
+}
+
+.btn-section {
+    width: 253px;
+    padding: 13px 25px;
+}
+
+.popular-products {
+    margin-bottom: 20px;
 }
 
 .products-list {
@@ -480,8 +536,21 @@ a {
 
 
 .popular-developers-item {
+    box-sizing: border-box;
+    display: flex;
     width: 220px;
     min-height: 145px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.popular-developers-item:hover {
+    border: none;
+    box-shadow: 
+}
+
+.popular-developers-item img {
+    margin: auto;
 }
 
 .services {
@@ -538,11 +607,13 @@ a {
 }
 
 .services-slider-guarantee {
+    display: none;
     background-image: url(../img/guarantee-pic.png);
     background-repeat: no-repeat;
 }
 
 .services-slider-credit {
+    display: none;
     background-image: url(../img/credit-pic.png);
     background-repeat: no-repeat;
 }
