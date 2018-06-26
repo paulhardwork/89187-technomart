@@ -1,5 +1,5 @@
 body {
-    min-width: 1200px;
+    min-width: 940px;
     margin: 0;
     padding: 0;
     font-family: "PT Sans", "Verdana", sans-serif;
@@ -71,12 +71,10 @@ a {
 }
 
 .site-logo {
-    box-sizing: border-box;
-    display: block;
     width: 220px;
     height: 40px;
-    padding-top: 8px;
     text-align: center;
+    line-height: 40px;
 }
 
 .site-logo:hover {
@@ -88,23 +86,69 @@ a {
 }
 
 .site-search {
-    width: 240px;
-    margin-right: 45px;
+    display: flex;
+    width: 270px;
 }
 
-.btn-head-bookmark {
-    width: 125px;
-    margin-right: 35px;
-}
-
-.btn-head-cart {
-    width: 125px;
-    margin-right: 10px;
-}
-
-.btn-head-bookmark:hover,
-.btn-head-cart:hover {
+.site-search:hover,
+.site-search:focus,
+.site-search input[type="search"]:hover,
+.site-search input[type="search"]:focus {
     background-color: #212a3a;
+}
+
+.site-search input::placeholder {
+    color: #ffffff;
+}
+
+.btn-search {
+    padding-left: 15px;
+    border: none;
+    background-color: inherit;
+}
+
+.site-search:hover .icon-search,
+.site-search:focus .icon-search {
+    fill: #ffffff;
+}
+
+.btn-head-bookmark,
+.btn-head-cart {
+    position: relative;
+    padding-left: 45px;
+    padding-right: 30px;
+    line-height: 40px;
+    white-space: nowrap;
+}
+
+.btn-full-cart {
+    background-color: #ee3643;
+}
+
+.btn-head-bookmark::before,
+.btn-head-cart::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    width: 21px;
+    height: 18px;
+    opacity: 0.3;
+}
+
+.btn-head-bookmark::before {
+    background: url("../img/icon-bookmark.svg") 0 0 no-repeat;
+}
+
+.btn-head-cart::before {
+    background: url("../img/icon-cart.svg") 0 0 no-repeat;
+}
+
+.btn-head-bookmark:hover::before,
+.btn-head-bookmark:focus::before,
+.btn-head-cart:hover::before,
+.btn-head-cart:focus::before {
+    opacity: 1;
 }
 
 .btn-head-bookmark:active,
@@ -113,9 +157,15 @@ a {
     opacity: 0.6;
 }
 
+.btn-head-bookmark:active::before,
+.btn-head-cart:active::before {
+    opacity: 0.5;
+}
+
 .btn-make-order {
     width: 150px;
     font-size: 17px;
+    line-height: 40px;
     text-transform: none;
     background-color: #63a63e;
 }
@@ -134,10 +184,6 @@ a {
     background-color: #293449;
     border: none;
     outline: none;
-}
-
-.page-header-info {
-    padding-bottom: 60px;
 }
 
 .page-header-info .container {
@@ -159,20 +205,43 @@ a {
 }
 
 .page-header-contacts {
-    width: 300px;
-    margin-right: 35px;
+    width: 270px;
+    margin-right: 70px;
+    margin-bottom: 40px;
 }
 
 .telephone-number {
+    position: relative;
+    box-sizing: border-box;
     display: block;
+    width: 270px;
+    margin-bottom: 5px;
+    padding: 10px 0 10px 75px;
     font-size: 21px;
     line-height: 21px;
     color: #ee3643;
+    border: 3px solid #ffffff;
+}
+
+.telephone-number::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    width: 22px;
+    height: 22px;
+    background: url("../img/icon-phone.svg") 0 0 no-repeat;
 }
 
 .shop-location {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 14px;
     line-height: 24px;
+    white-space: nowrap;
+    letter-spacing: -0.8px;
     color: #32425c;
 }
 
@@ -181,8 +250,12 @@ a {
 }
 
 .page-header-menu {
-    width: 940px;
-    margin-top: 40px;
+    margin-bottom: 65px;
+    box-shadow: 0 5px 0 0 #293449;
+}
+
+.page-header-menu .container {
+    display: flex;
 }
 
 .user-login,
@@ -193,8 +266,17 @@ a {
     list-style: none;
 }
 
+.user-login {
+    display: flex;
+}
+
+.user-login li {
+    margin-right: 10px;
+}
+
 .user-login a {
     display: block;
+    padding: 15px 25px 15px 50px;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
@@ -227,9 +309,22 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.main-menu {
+    display: flex;
+}
+
 .main-menu a {
     display: block;
+    padding: 20px 30px;
     background-color: #32425c;
+}
+
+.main-menu li:first-child a {
+    padding-left: 55px;
+}
+
+.main-menu li:last-child a {
+    padding-right: 55px;
 }
 
 .main-menu a:hover {
@@ -242,6 +337,7 @@ a {
 }
 
 .features {
+    margin-top: 60px;
     margin-bottom: 55px;
 }
 
@@ -298,6 +394,7 @@ a {
 }
 
 .feature-slider-pinch {
+    display: none;
     background-color: #ab9a85;
     background-image: url(../img/slider-punch.jpg);
     background-repeat: no-repeat;
