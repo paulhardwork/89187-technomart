@@ -488,10 +488,6 @@ a {
     padding: 13px 25px;
 }
 
-.popular-products {
-    margin-bottom: 20px;
-}
-
 .products-list {
     display: flex;
     justify-content: space-between;
@@ -501,6 +497,7 @@ a {
     box-sizing: border-box;
     position: relative;
     width: 220px;
+    margin-bottom: 20px;
     padding-bottom: 5px;
     text-align: center;
     border: 1px solid #e5e5e5;
@@ -603,7 +600,18 @@ a {
     border-color: rgba(50, 66, 92, 0.3);
 }
 
+.new-product {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    height: 60px;
+    background: url("../img/new-flag.png") 0 0 no-repeat;
+}
+
 .previous-price {
+    margin-bottom: 12px;
     font-size: 17px;
     line-height: 18px;
     text-decoration: line-through;
@@ -611,6 +619,7 @@ a {
 }
 
 .current-price {
+    margin-bottom: 20px;
     font-size: 17px;
     line-height: 18px;
     color: #000000;
@@ -832,6 +841,9 @@ a {
     width: 220px;
     height: 65px;
     margin-right: 175px;
+    font-size: 30px;
+    line-height: 65px;
+    text-align: center;
 }
 
 .footer-list-top,
