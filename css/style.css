@@ -41,6 +41,22 @@ a {
     background-color: #ba2732;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+    
+
 .page-header {
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 17px;
@@ -457,6 +473,8 @@ a {
 }
 
 .section-header {
+    margin: 0;
+    padding: 0;
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 30px;
     line-height: 30px;
@@ -619,10 +637,28 @@ a {
 }
 
 .current-price {
+    position: relative;
+    box-sizing: border-box;
+    width: 140px;
+    margin: 0 auto;
     margin-bottom: 20px;
+    padding: 10px 30px;
     font-size: 17px;
     line-height: 18px;
-    color: #000000;
+    color: #ffffff;
+    background-color: #ee3643;
+    border-radius: 3px;
+}
+
+.current-price::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border: 19px solid #ffffff;
+    border-left-color:#ee3643;
 }
 
 .popular-developers-block {
@@ -653,20 +689,28 @@ a {
 
 .services {
     background-color: #f4f8f9;
-    padding-top: 1px;
+}
+
+.services .container {
+    margin-bottom: 80px;
+    padding-top: 65px;
 }
 
 .services-head {
-    margin-top: 70px;
-    margin-bottom: 75px;
+    margin-bottom: 70px;
+}
+
+.services-promise {
+    margin: 0;
+    padding: 0;
+    margin-top: 35px;
 }
 
 .services-slider-wrapper {
     display: flex;
-    
 }
 
-.services-slider-list-container {
+.services-list-container {
     margin-right: 80px;
 }
 
@@ -720,6 +764,26 @@ a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 85px;
+}
+
+.company-info {
+    width: 520px;
+}
+
+.transport-companies-list {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    list-style: none;
+}
+
+.contacts {
+    width: 300px;
+}
+
+.map-popup-hyper {
+    display: block;
+    margin-bottom: 40px;
 }
 
 .index-main {
@@ -828,7 +892,7 @@ a {
 }
 
 .page-footer .container {
-    margin-bottom: 50px;
+    margin-bottom: 53px;
 }
 
 .footer-menu-top,
@@ -841,6 +905,7 @@ a {
     width: 220px;
     height: 65px;
     margin-right: 175px;
+    margin-bottom: 35px;
     font-size: 30px;
     line-height: 65px;
     text-align: center;
@@ -848,9 +913,21 @@ a {
 
 .footer-list-top,
 .footer-list-bottom {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.footer-list-top a,
+.footer-list-bottom a {
+    display: block;
+    margin-right: 60px;
+}
+
+.footer-list-top li:last-child a,
+.footer-list-bottom li:last-child a {
+    margin-right: 0;
 }
 
 .footer-list-top {
@@ -877,11 +954,8 @@ a {
 
 .footer-copyright .container {
     display: flex;
-}
-
-.copyright {
-    width: 260px;
-    margin-right: 150px;
+    padding-top: 35px;
+    padding-bottom: 30px;
 }
 
 .footer-copyright p {
@@ -889,18 +963,47 @@ a {
     padding: 0;
 }
 
+.footer-copyright .copyright {
+    width: 260px;
+    margin-right: 150px;
+}
+
 .footer-copyright-social {
+    display: flex;
     margin-right: 115px;
 }
 
 .footer-copyright-urls {
     display: flex;
-    justify-content: space-between;
     width: 300px;
 }
 
-.footer-copyright-urls p:first-child {
+.footer-copyright-urls p {
     margin-right: 50px;
+}
+
+.footer-copyright-urls p:last-child {
+    margin-right: 15px;
+}
+
+.social-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.social-btn-vk {
+    background: url(../img/vk-icon.svg) 50% 50% no-repeat #222c3d;
+}
+
+.social-btn-fb {
+    background: url(../img/fb-icon.svg) 50% 50% no-repeat #222c3d;
+}
+
+.social-btn-inst {
+    background: url(../img/insta-icon.svg) 50% 50% no-repeat #222c3d;
 }
 
 .write-us label {
