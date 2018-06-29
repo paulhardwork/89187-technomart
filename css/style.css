@@ -56,6 +56,15 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
 }
     
+.new-flag::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: url("../img/new-flag.png") 0 0 no-repeat;
+}
 
 .page-header {
     font-family: "Cuprum", "Verdana", sans-serif;
@@ -89,7 +98,7 @@ input[type="radio"].visually-hidden {
 
 .site-logo {
     width: 220px;
-    height: 40px;
+    height: 42px;
     text-align: center;
     line-height: 40px;
 }
@@ -131,7 +140,7 @@ input[type="radio"].visually-hidden {
     position: relative;
     padding-left: 45px;
     padding-right: 30px;
-    line-height: 40px;
+    line-height: 42px;
     white-space: nowrap;
 }
 
@@ -178,7 +187,7 @@ input[type="radio"].visually-hidden {
     width: 150px;
     padding: 0;
     font-size: 17px;
-    line-height: 40px;
+    line-height: 42px;
     text-transform: none;
     background-color: #63a63e;
     border-radius: 0;
@@ -209,7 +218,7 @@ input[type="radio"].visually-hidden {
     width: 200px;
     margin: 0;
     margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 70px;
     padding: 0;
     font-size: 16px;
     font-style: italic;
@@ -220,7 +229,7 @@ input[type="radio"].visually-hidden {
 
 .page-header-contacts {
     width: 270px;
-    margin-right: 70px;
+    margin-right: 50px;
     margin-bottom: 40px;
 }
 
@@ -230,7 +239,7 @@ input[type="radio"].visually-hidden {
     display: block;
     width: 270px;
     margin-bottom: 5px;
-    padding: 10px 0 10px 75px;
+    padding: 10px 0 10px 70px;
     font-size: 21px;
     line-height: 21px;
     color: #ee3643;
@@ -255,12 +264,11 @@ input[type="radio"].visually-hidden {
     font-size: 14px;
     line-height: 24px;
     white-space: nowrap;
-    letter-spacing: -0.8px;
     color: #32425c;
 }
 
 .user-block {
-    width: 300px;
+    width: 280px;
 }
 
 .page-header-menu {
@@ -282,19 +290,63 @@ input[type="radio"].visually-hidden {
 
 .user-login {
     display: flex;
-}
-
-.user-login li {
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .user-login a {
     display: block;
-    padding: 15px 25px 15px 50px;
     font-size: 21px;
     line-height: 21px;
     color: #000000;
     background-color: #ffffff;
+}
+
+.btn-login {
+    position: relative;
+    width: 43px;
+    margin-right: 10px;
+    padding: 12px;
+    padding-left: 50px;
+    padding-right: 27px;
+}
+
+.btn-login svg {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+}
+
+.btn-signin {
+    width: 100px;
+    padding: 12px 25px;
+}
+
+.btn-logout {
+    position: relative;
+    display: block;
+    width: 60px;
+    min-height: 45px;
+}
+
+.btn-logout svg {
+    position: absolute;
+    top: 13px;
+    left: 30px;
+}
+
+.user-name {
+    position: relative;
+    box-sizing: border-box;
+    width: 240px;
+    padding: 12px;
+    padding-left: 47px;
+    padding-right: 10px;
+}
+
+.user-name svg {
+    position: absolute;
+    top: 14px;
+    left: 13px;
 }
 
 .user-login a:hover,
@@ -302,21 +354,55 @@ input[type="radio"].visually-hidden {
     color: #ee3643;
 }
 
+.user-login .user-name:hover {
+    color: #000000;
+}
+
+.btn-login:hover path,
+.btn-logout:hover path,
+.user-name:hover path {
+    fill: #32425c;
+}
+
+.btn-login:active path,
+.btn-logout:active path,
+.user-name:active path {
+    fill: #c5c5c5;
+}
+
 .user-login a:active {
     color: rgba(0, 0, 0, 0.3);
     background-color: #ffffff;
 }
 
-.user-menu li:not(:first-child) {
-    list-style: circle;
+.user-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18px;
+}
+
+.user-menu li {
+    position: relative;
 }
 
 .user-menu a {
     display: block;
+    margin-right: 33px;
     font-size: 16px;
     line-height: 18px;
     color: #32425c;
     text-decoration: underline;
+}
+
+.user-menu li:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -19px;
+    width: 5px;
+    height: 5px;
+    background-color: #32425c;
+    border-radius: 50%;
 }
 
 .user-menu a:active {
@@ -387,16 +473,6 @@ input[type="radio"].visually-hidden {
 
 .features-materials {
     background-color: #ffbf47; 
-}
-
-.features-materials::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 240px;
-    width: 60px;
-    height: 60px;
-    background: url("../img/new-flag.png") 0 0 no-repeat;
 }
 
 .features-materials::after {
@@ -516,7 +592,6 @@ input[type="radio"].visually-hidden {
     position: relative;
     width: 220px;
     margin-bottom: 20px;
-    padding-bottom: 5px;
     text-align: center;
     border: 1px solid #e5e5e5;
 }
@@ -526,13 +601,13 @@ input[type="radio"].visually-hidden {
 }
 
 .products-list-item img {
-    margin-bottom: 18px;
+    margin-bottom: 7px;
 }
 
 .product-name {
     margin: 0;
-    padding: 0;
     margin-bottom: 15px;
+    padding: 0 25px;
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
@@ -618,22 +693,16 @@ input[type="radio"].visually-hidden {
     border-color: rgba(50, 66, 92, 0.3);
 }
 
-.new-product {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 60px;
-    height: 60px;
-    height: 60px;
-    background: url("../img/new-flag.png") 0 0 no-repeat;
-}
-
 .previous-price {
     margin-bottom: 12px;
     font-size: 17px;
     line-height: 18px;
     text-decoration: line-through;
     color: #a9a9a9;
+}
+
+.product-name + .current-price {
+    margin-top: 43px;
 }
 
 .current-price {
@@ -720,7 +789,7 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
-.services-slider-list li {
+.services-slider-list {
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 21px;
     font-weight: 700;
@@ -873,14 +942,26 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px dotted #ee3643;
 }
 
+.products-pages {
+    margin-bottom: 60px;
+}
+
 .page-list {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .info-about-product {
+    padding-top: 65px;
+    padding-bottom: 70px;
     background-color: #f2f6f8;
+}
+
+.info-about-header {
+    margin-bottom: 30px;
+    color: #000000;
 }
 
 .page-footer {
