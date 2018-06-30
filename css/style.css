@@ -567,21 +567,20 @@ input[type="radio"].visually-hidden {
     margin-bottom: 20px;
 }
 
-.feature-slider-pinch {
+.feature-slider-item {
     min-height: 241px;
     padding: 25px 0 0 25px;
     background-color: #ab9a85;
-    background-image: url(../img/slider-punch.jpg);
     background-repeat: no-repeat;
+}
+
+.feature-slider-pinch {
+    background-image: url(../img/slider-punch.jpg);
 }
 
 .feature-slider-drill {
     display: none;
-    min-height: 241px;
-    padding: 25px 0 0 25px;
-    background-color: #ab9a85;
     background-image: url(../img/slider-drill.jpg);
-    background-repeat: no-repeat;
 }
 
 .slide-head {
@@ -616,14 +615,6 @@ input[type="radio"].visually-hidden {
     line-height: 30px;
     text-transform: uppercase;
     color: #32425c;
-}
-
-.bigheader-padding {
-    padding: 30px;
-}
-
-.another-header {
-    color: #000000;
 }
 
 .popular-head {
@@ -802,7 +793,6 @@ input[type="radio"].visually-hidden {
     margin-bottom: 85px;
 }
 
-
 .popular-developers-item {
     box-sizing: border-box;
     display: flex;
@@ -851,30 +841,58 @@ input[type="radio"].visually-hidden {
 }
 
 .services-list-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
     margin-right: 80px;
 }
 
-.services-slider-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.services-list-container::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 10px;
+    height: 272px;
+    background-image: url(../img/shadow-right.png);
 }
 
-.services-slider-list {
+.services-list-container label {
+    width: 225px;
+    padding: 15px 0 20px 15px;
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 21px;
     font-weight: 700;
     line-height: 30px;
     color: #ffffff;
     background-color: #32425c;
+    cursor: pointer;
 }
 
-.services-slider-list li:hover {
+.services-list-container label:hover {
     background-color: #293449;
+}
+
+.services-list-container input[type="radio"]:checked + label {
+    color: #293449;
+    background-color: #ffffff;
+}
+
+.services-slider-item {
+    width: 620px;
+    min-height: 285px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.services-slider-item p {
+    margin: 0;
 }
 
 .services-slide-head {
     margin: 0;
+    margin-bottom: 32px;
     padding: 0;
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 36px;
@@ -885,19 +903,23 @@ input[type="radio"].visually-hidden {
 
 .services-slider-delivery {
     background-image: url(../img/delivery-pic.png);
-    background-repeat: no-repeat;
 }
 
 .services-slider-guarantee {
     display: none;
     background-image: url(../img/guarantee-pic.png);
-    background-repeat: no-repeat;
 }
 
 .services-slider-credit {
     display: none;
     background-image: url(../img/credit-pic.png);
-    background-repeat: no-repeat;
+}
+
+.btn-slide-credit {
+    width: 106px;
+    margin-top: 30px;
+    padding-left: 45px;
+    padding-right: 45px;
 }
 
 .services + .container {
@@ -910,11 +932,58 @@ input[type="radio"].visually-hidden {
     width: 520px;
 }
 
+.company-info-header,
+.contacts-header {
+    margin-bottom: 35px;
+    color: #000000;
+}
+
+.company-text-first,
+.contacts-text {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.company-text-second {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
 .transport-companies-list {
     margin: 0;
     padding: 0;
     margin-bottom: 40px;
     list-style: none;
+    font-family: "Cuprum", "Verdana", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.transport-companies-list li {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 35px;
+}
+
+.transport-companies-list li:last-child {
+    margin-bottom: 0;
+}
+
+
+.transport-companies-list li::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #ee3643;
+}
+
+.btn-more-company {
+    width: 140px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .contacts {
