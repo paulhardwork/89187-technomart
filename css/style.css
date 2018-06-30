@@ -21,6 +21,7 @@ a {
 }
 
 .btn {
+    display: block;
     padding: 10px 50px;
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 14px;
@@ -229,8 +230,12 @@ input[type="radio"].visually-hidden {
 
 .page-header-contacts {
     width: 270px;
-    margin-right: 50px;
+    margin-right: 70px;
     margin-bottom: 40px;
+}
+
+.page-header-contacts + .authorized {
+    margin-left: -20px;
 }
 
 .telephone-number {
@@ -489,19 +494,61 @@ input[type="radio"].visually-hidden {
     background-color: #3bbce3; 
 }
 
+.features-tools::after {
+    content: "";
+    position: absolute;
+    top: 33px;
+    right: 29px;
+    width: 75px;
+    height: 61px;
+    background: url("../img/icon-features-2.svg") 0 0 no-repeat;
+}
+
 .features-technique {
     background-color: #dc91d8; 
+}
+
+.features-technique::after {
+    content: "";
+    position: absolute;
+    top: 31px;
+    right: 31px;
+    width: 78px;
+    height: 62px;
+    background: url("../img/icon-features-3.svg") 0 0 no-repeat;
 }
 
 .features-sales {
     background-color: #8ed78f; 
 }
 
+.features-sales::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 45px;
+    width: 59px;
+    height: 72px;
+    background: url("../img/icon-features-4.svg") 0 0 no-repeat;
+}
+
 .features-delivery {
     background-color: #ffc047; 
 }
 
+.features-delivery::after {
+    content: "";
+    position: absolute;
+    top: 32px;
+    right: 30px;
+    width: 78px;
+    height: 63px;
+    background: url("../img/icon-features-5.svg") 0 0 no-repeat;
+}
+
 .btn-feature {
+    display: block;
+    width: 105px;
     padding: 10px 15px;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 5%;
@@ -521,6 +568,8 @@ input[type="radio"].visually-hidden {
 }
 
 .feature-slider-pinch {
+    min-height: 241px;
+    padding: 25px 0 0 25px;
     background-color: #ab9a85;
     background-image: url(../img/slider-punch.jpg);
     background-repeat: no-repeat;
@@ -528,12 +577,15 @@ input[type="radio"].visually-hidden {
 
 .feature-slider-drill {
     display: none;
+    min-height: 241px;
+    padding: 25px 0 0 25px;
     background-color: #ab9a85;
     background-image: url(../img/slider-drill.jpg);
     background-repeat: no-repeat;
 }
 
 .slide-head {
+    margin-bottom: 12px;
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 36px;
     line-height: 36px;
@@ -543,9 +595,17 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-text {
+    margin: 0;
+    margin-bottom: 125px;
+    padding: 0;
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
+}
+
+.btn-slider {
+    width: 100px;
+    padding-right: 45px;
 }
 
 .section-header {
@@ -613,12 +673,17 @@ input[type="radio"].visually-hidden {
     font-weight: 700;
 }
 
+.products-list-item:hover {
+    border-color: rgba(229, 229, 229, 0);
+    box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
 .products-list-item:hover img {
     visibility: hidden;
 }
 
 .products-list-item:hover .products-hover-buttons {
-    display: block;
+    display: flex;
 }
 
 .products-hover-buttons {
@@ -748,8 +813,14 @@ input[type="radio"].visually-hidden {
 }
 
 .popular-developers-item:hover {
-    border: none;
-    box-shadow: 
+    border-color: rgba(229, 229, 229, 0);
+    box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5); 
+}
+
+.popular-developers-item:active {
+    border-color: rgba(229, 229, 229, 0);
+    box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+    opacity: 0.3;
 }
 
 .popular-developers-item img {
