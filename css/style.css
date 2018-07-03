@@ -225,7 +225,7 @@ input[type="search"]:hover path {
 }
 
 .btn-make-order {
-    width: 150px;
+    min-width: 150px;
     padding: 0;
     font-size: 17px;
     line-height: 42px;
@@ -364,7 +364,7 @@ input[type="search"]:hover path {
 }
 
 .btn-signin {
-    width: 100px;
+    min-width: 100px;
     padding: 12px 25px;
 }
 
@@ -589,7 +589,6 @@ input[type="search"]:hover path {
 }
 
 .btn-feature {
-    display: block;
     width: 105px;
     padding: 10px 15px;
     background-color: rgba(0, 0, 0, 0.1);
@@ -605,8 +604,56 @@ input[type="search"]:hover path {
 }
 
 .features-slider {
+    position: relative;
     width: 620px;
     margin-bottom: 20px;
+}
+
+.features-slider .slider-btn {
+    position: absolute;
+    width: 22px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.features-slider .left-btn {
+    top: 115px;
+    left: 25px;
+    background: url(../img/icon-left.svg) 0 0 no-repeat;
+}
+
+.features-slider .right-btn {
+    top: 115px;
+    right: 25px;
+    background: url(../img/icon-right.svg) 0 0 no-repeat;
+}
+
+.circle-slider-controls {
+    position: absolute;
+    top: 215px;
+    left: 295px;
+    width: 35px;
+}
+
+.circle-slider-controls label {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.circle-slider-controls label.active-slide {
+    background-color: #ee3643;
+    border: 2px solid #ffffff;
+}
+
+.circle-slider-controls label:last-child {
+    margin-right: 0;
 }
 
 .feature-slider-item {
@@ -617,11 +664,11 @@ input[type="search"]:hover path {
 }
 
 .feature-slider-pinch {
+    display: none;
     background-image: url(../img/slider-punch.jpg);
 }
 
 .feature-slider-drill {
-    display: none;
     background-image: url(../img/slider-drill.jpg);
 }
 
@@ -671,7 +718,7 @@ input[type="search"]:hover path {
 }
 
 .btn-section {
-    width: 253px;
+    min-width: 203px;
     padding: 13px 25px;
 }
 
@@ -945,7 +992,6 @@ input[type="search"]:hover path {
 }
 
 .services-slider-delivery {
-    display: none;
     background-image: url(../img/delivery-pic.png);
 }
 
@@ -954,6 +1000,7 @@ input[type="search"]:hover path {
 }
 
 .services-slider-guarantee {
+    display: none;
     background-image: url(../img/guarantee-pic.png);
 }
 
@@ -1488,7 +1535,7 @@ input[type="search"]:hover path {
 .site-logo-footer {
     width: 220px;
     height: 65px;
-    margin-right: 175px;
+    margin-right: 168px;
     margin-bottom: 35px;
     font-size: 30px;
     line-height: 65px;
