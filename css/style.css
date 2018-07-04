@@ -66,8 +66,8 @@ input[type="radio"].visually-hidden {
 .new-flag::before {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -1px;
+    right: -1px;
     width: 60px;
     height: 60px;
     background: url("../img/new-flag.png") 0 0 no-repeat;
@@ -89,7 +89,7 @@ input[type="radio"].visually-hidden {
 
 .page-header-top .container {
     display: flex;
-    margin-bottom: 45px;
+    margin-bottom: 46px;
 }
 
 .site-logo,
@@ -258,8 +258,8 @@ input[type="search"]:hover path {
 .header-top {
     width: 200px;
     margin: 0;
-    margin-left: 50px;
-    margin-right: 70px;
+    margin-left: 52px;
+    margin-right: 68px;
     padding: 0;
     font-size: 16px;
     font-style: italic;
@@ -284,8 +284,8 @@ input[type="search"]:hover path {
     box-sizing: border-box;
     display: block;
     width: 270px;
-    margin-bottom: 5px;
-    padding: 10px 0 10px 70px;
+    margin-bottom: 4px;
+    padding: 9px 0 9px 70px;
     font-size: 21px;
     line-height: 21px;
     color: #ee3643;
@@ -336,7 +336,7 @@ input[type="search"]:hover path {
 
 .user-login {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .user-login a {
@@ -353,8 +353,8 @@ input[type="search"]:hover path {
     margin-left: 19px;
     margin-right: 10px;
     padding: 12px;
-    padding-left: 50px;
-    padding-right: 27px;
+    padding-left: 48px;
+    padding-right: 29px;
 }
 
 .btn-login svg {
@@ -462,12 +462,12 @@ input[type="search"]:hover path {
 
 .main-menu a {
     display: block;
-    padding: 20px 30px;
+    padding: 18px 31px 18px 30px;
     background-color: #32425c;
 }
 
 .main-menu li:first-child a {
-    padding-left: 55px;
+    padding-left: 52px;
 }
 
 .main-menu li:last-child a {
@@ -672,7 +672,7 @@ input[type="search"]:hover path {
     background-image: url(../img/slider-drill.jpg);
 }
 
-.slide-head {
+.feature-slider-item .slide-head {
     margin-bottom: 12px;
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 36px;
@@ -682,10 +682,11 @@ input[type="search"]:hover path {
     color: #ffffff;
 }
 
-.slide-text {
+.feature-slider-item .slide-text {
     margin: 0;
-    margin-bottom: 125px;
+    margin-bottom: 120px;
     padding: 0;
+    font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #ffffff;
@@ -701,6 +702,7 @@ input[type="search"]:hover path {
     padding: 0;
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 30px;
+    font-weight: 400;
     line-height: 30px;
     text-transform: uppercase;
     color: #32425c;
@@ -710,20 +712,25 @@ input[type="search"]:hover path {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 90px;
+    min-height: 88px;
     padding-left: 30px;
     padding-right: 24px;
     margin-bottom: 20px;
     background-color: #f9f5f0;
 }
 
+.developers-head {
+    padding-left: 26px;
+}
+
 .btn-section {
     min-width: 203px;
-    padding: 13px 25px;
+    padding: 10px 25px;
 }
 
 .products-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -741,12 +748,12 @@ input[type="search"]:hover path {
 }
 
 .products-list-item img {
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 }
 
 .product-name {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     padding: 0 25px;
     font-size: 18px;
     line-height: 20px;
@@ -839,7 +846,7 @@ input[type="search"]:hover path {
 }
 
 .previous-price {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-size: 17px;
     line-height: 18px;
     text-decoration: line-through;
@@ -847,7 +854,7 @@ input[type="search"]:hover path {
 }
 
 .product-name + .current-price {
-    margin-top: 43px;
+    margin-top: 40px;
 }
 
 .current-price {
@@ -912,7 +919,7 @@ input[type="search"]:hover path {
 
 .services .container {
     margin-bottom: 80px;
-    padding-top: 65px;
+    padding-top: 45px;
 }
 
 .services-head {
@@ -923,7 +930,7 @@ input[type="search"]:hover path {
     width: 400px;
     margin: 0;
     padding: 0;
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 .services-slider-wrapper {
@@ -949,8 +956,8 @@ input[type="search"]:hover path {
 }
 
 .services-list-container label {
-    width: 225px;
-    padding: 15px 0 20px 15px;
+    width: 217px;
+    padding: 15px 0 15px 23px;
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 21px;
     font-weight: 700;
@@ -982,10 +989,11 @@ input[type="search"]:hover path {
 
 .services-slide-head {
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     padding: 0;
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 36px;
+    font-weight: 400;
     line-height: 36px;
     text-transform: uppercase;
     color: #32425c;
@@ -1033,26 +1041,26 @@ input[type="search"]:hover path {
 
 .company-info-header,
 .contacts-header {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     color: #000000;
 }
 
-.company-text-first,
-.contacts-text {
+.company-text-first {
     margin: 0;
     margin-bottom: 25px;
+    letter-spacing: 0.12px;
 }
 
 .company-text-second {
     width: 390px;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 .transport-companies-list {
     margin: 0;
     padding: 0;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
     list-style: none;
     font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 18px;
@@ -1061,14 +1069,13 @@ input[type="search"]:hover path {
 
 .transport-companies-list li {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     padding-left: 35px;
 }
 
 .transport-companies-list li:last-child {
     margin-bottom: 0;
 }
-
 
 .transport-companies-list li::before {
     content: "";
@@ -1092,6 +1099,7 @@ input[type="search"]:hover path {
 
 .contacts-text {
     width: 180px;
+    margin-bottom: 30px;
 }
 
 .map-popup-hyper {
@@ -1107,22 +1115,19 @@ input[type="search"]:hover path {
 }
 
 .catalog-main {
-    margin-top: 25px;
+    margin-top: 23px;
 }
 
 .catalog-menu-container {
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
 
 .catalog-menu {
     display: flex;
+    min-height: 18px;
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.catalog-menu li {
-    position: relative;
 }
 
 .catalog-menu a {
@@ -1134,7 +1139,7 @@ input[type="search"]:hover path {
     color: #000000;
 }
 
-.catalog-menu li:not(:first-child)::before {
+.catalog-menu a:not(.home-page)::before {
     content: "";
     position: absolute;
     top: 2px;
@@ -1161,6 +1166,7 @@ input[type="search"]:hover path {
 }
 
 .catalog-header {
+    margin: 0;
     margin-bottom: 20px;
     padding: 30px;
     background-color: #f2f6f8;
@@ -1184,7 +1190,7 @@ input[type="search"]:hover path {
 }
 
 .filter-head {
-    margin-bottom: 13px;
+    margin-bottom: 11px;
     padding-left: 20px;
     line-height: 38px;
 }
@@ -1201,7 +1207,7 @@ input[type="search"]:hover path {
 }
 
 .field-container:last-of-type {
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 }
 
 .field-container legend {
@@ -1228,11 +1234,15 @@ input[type="search"]:hover path {
 
 .field-container p {
     margin: 0;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
 }
 
 .filter-block-head {
     margin-bottom: 15px;
+}
+
+.field-container:last-of-type .filter-block-head {
+    letter-spacing: 0.5px;
 }
 
 .range-controls {
@@ -1252,7 +1262,7 @@ input[type="search"]:hover path {
 }
 
 .range-controls .bar {
-    width: 50%;
+    width: 80%;
     height: 2px;
     background-color: #00ca74;
 }
@@ -1276,7 +1286,7 @@ input[type="search"]:hover path {
 }
 
 .range-controls .toggle-max {
-    left: 90px;
+    left: 160px;
 }
 
 .price-controls {
@@ -1288,7 +1298,7 @@ input[type="search"]:hover path {
 .price-controls input[type="text"] {
     width: 75px;
     padding: 8px 10px;
-    font-family: "PTSans", "Verdana", sans-serif;
+    font-family: "Cuprum", "Verdana", sans-serif;
     font-size: 17px;
     line-height: 18px;
     text-align: center;
@@ -1374,7 +1384,7 @@ input[type="search"]:hover path {
     width: 700px;
 }
 
-.products-list {
+.products-sort + .products-list {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 32px;
@@ -1396,7 +1406,7 @@ input[type="search"]:hover path {
 .products-sort .sort-parameters {
     display: flex;
     justify-content: space-between;
-    width: 355px;
+    width: 360px;
     margin: 0;
     margin-right: 45px;
     padding: 0;
@@ -1423,10 +1433,8 @@ input[type="search"]:hover path {
     display: flex;
     width: 60px;
     margin: 0;
-    margin-right: 17px;
     padding: 0;
     list-style: none;
-    
 }
 
 .sort-direction .sort-grow,
@@ -1439,7 +1447,7 @@ input[type="search"]:hover path {
 }
 
 .sort-direction .sort-grow {
-    margin-right: 21px;
+    margin-right: 20px;
 }
 
 .sort-grow svg,
@@ -1504,14 +1512,19 @@ input[type="search"]:hover path {
 }
 
 .info-about-product {
-    padding-top: 65px;
-    padding-bottom: 70px;
+    padding-top: 63px;
+    padding-bottom: 55px;
     background-color: #f2f6f8;
 }
 
 .info-about-header {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     color: #000000;
+    letter-spacing: 0.18px;
+}
+
+.info-about-text {
+    letter-spacing: 0.13px;
 }
 
 .page-footer {
@@ -1533,10 +1546,10 @@ input[type="search"]:hover path {
 }
 
 .site-logo-footer {
-    width: 220px;
+    min-width: 220px;
     height: 65px;
-    margin-right: 168px;
-    margin-bottom: 35px;
+    margin-right: 172px;
+    margin-bottom: 30px;
     font-size: 30px;
     line-height: 65px;
     text-align: center;
@@ -1562,13 +1575,17 @@ input[type="search"]:hover path {
 }
 
 .footer-list-top {
-    margin-top: 40px;
+    margin-top: 38px;
 }
 
 .footer-menu-bottom p {
     margin: 0;
     padding: 0;
-    margin-right: 90px;
+    margin-right: 88px;
+}
+
+.footer-menu-bottom .location {
+    padding-left: 2px;
 }
 
 .footer-list-bottom a,
@@ -1586,7 +1603,7 @@ input[type="search"]:hover path {
 .footer-copyright .container {
     display: flex;
     margin-bottom: 0;
-    padding-top: 35px;
+    padding-top: 32px;
     padding-bottom: 30px;
 }
 
@@ -1598,6 +1615,7 @@ input[type="search"]:hover path {
 .footer-copyright .copyright {
     width: 260px;
     margin-right: 150px;
+    letter-spacing: 0.12px;
 }
 
 .footer-copyright-social {
@@ -1611,7 +1629,7 @@ input[type="search"]:hover path {
 }
 
 .footer-copyright-urls p {
-    margin-right: 50px;
+    margin-right: 52px;
 }
 
 .footer-copyright-urls p:last-child {
