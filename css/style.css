@@ -1355,6 +1355,11 @@ input[type="search"]:hover path {
     opacity: 1;
 }
 
+.field-container input[type="checkbox"]:disabled + .checkbox-indicator,
+.field-container input[type="checkbox"]:disabled + .checkbox-indicator {
+    opacity: 0.3;
+}
+
 .btn-form {
     width: 140px;
     padding: 12px 40px;
@@ -1636,12 +1641,37 @@ input[type="search"]:hover path {
     margin-right: 15px;
 }
 
+.footer-list-top a:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+.footer-list-bottom a:hover,
+.footer-copyright a:not(.social-btn):hover {
+    border-bottom: 1px solid #ffd180;
+}
+
+.footer-copyright a:active {
+    color: #ee3643;
+    border: none;
+}
+
+.footer-list-top a:active,
+.footer-list-bottom a:active {
+    opacity: 0.5;
+    border: none;
+}
+
 .social-btn {
     display: block;
     width: 40px;
     height: 40px;
     margin-right: 5px;
     border-radius: 50%;
+}
+
+.social-btn:hover,
+.social-btn:active {
+    background-color: #ee3643;
 }
 
 .social-btn-vk {
@@ -1716,7 +1746,7 @@ input[type="search"]:hover path {
 .modal-write-us input {
     box-sizing: border-box;
     padding: 10px 15px;
-    border: 2px solid #a9a9a9;
+    border: 2px solid #e5e5e5;
     border-radius: 4px;
 }
 
@@ -1817,4 +1847,8 @@ input[type="search"]:hover path {
     color: #000000;
     background-color: #ffffff;
     padding: 10px 45px;
+}
+
+.modal-show {
+    display: block;
 }
