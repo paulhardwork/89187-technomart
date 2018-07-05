@@ -1,5 +1,5 @@
 body {
-    min-width: 940px;
+    min-width: 960px;
     margin: 0;
     padding: 0;
     font-family: "PT Sans", "Verdana", sans-serif;
@@ -16,7 +16,6 @@ a {
 
 img {
     max-width: 100%;
-    height: auto;
 }
 
 .container {
@@ -1605,6 +1604,7 @@ input[type="radio"][value="second-slide"]:checked ~ .circle-slider-controls labe
 }
 
 .footer-menu-bottom .location {
+    width: 325px;
     padding-left: 2px;
 }
 
