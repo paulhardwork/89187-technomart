@@ -11,3 +11,4 @@ close.addEventListener("click", function(disappearModal) {
     disappearModal.preventDefault();
     modal.classList.remove("modal-show");
 });
+
