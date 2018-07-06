@@ -61,6 +61,20 @@ input[type="radio"].visually-hidden {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+input[type=text]::-ms-clear,
+input[type=text]::-ms-reveal {  
+    display: none; 
+    width: 0;
+    height: 0; 
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none; 
+}
     
 .new-flag::before {
     content: "";
@@ -1743,11 +1757,11 @@ input[type="radio"][value="second-slide"]:checked ~ .circle-slider-controls labe
 .footer-menu-bottom p {
     margin: 0;
     padding: 0;
-    margin-right: 88px;
+    margin-right: 87px;
 }
 
 .footer-menu-bottom .location {
-    width: 325px;
+    width: 327px;
     padding-left: 2px;
 }
 
