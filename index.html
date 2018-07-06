@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
         <header class="page-header">
@@ -176,12 +176,12 @@
                         <p class="services-promise">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                     </div>
                     <div class="services-slider-wrapper">
+                        <input class="visually-hidden" type="radio" name="slider-choose" id="delivery" value="delivery" checked>
+                        <input class="visually-hidden" type="radio" name="slider-choose" id="guarantee" value="guarantee">
+                        <input class="visually-hidden" type="radio" name="slider-choose" id="credit" value="credit">
                         <div class="services-list-container">
-                            <input class="visually-hidden" type="radio" name="slider-choose" id="delivery" value="delivery" checked>
                             <label for="delivery">Доставка</label>
-                            <input class="visually-hidden" type="radio" name="slider-choose" id="guarantee" value="guarantee">
                             <label for="guarantee">Гарантия</label>
-                            <input class="visually-hidden" type="radio" name="slider-choose" id="credit" value="credit">
                             <label for="credit">Кредит</label>
                         </div>
                         <div class="services-slider-container">
@@ -265,15 +265,16 @@
         </footer>
         
         <section class="modal modal-map">
-            <img src="img/map-popup.png" width="940" height="446" alt="Интерактивная карта">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CBuyA-HzxD" width="940" height="446" allowfullscreen></iframe>
+<!--            <img src="img/map-popup.png" width="940" height="446" alt="Интерактивная карта">-->
             <button class="close-btn" type="button"><span class="visually-hidden">Закрыть окно</span></button>
         </section>
         
         <section class="modal modal-write-us">
-            <div class="modal-container form-container">
-                <button class="close-btn" type="button"><span class="visually-hidden">Закрыть окно</span></button>
-                <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-                    <div class="modal-field-container">
+            <button class="close-btn" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+            <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+                <div class="modal-container form-container">
+                     <div class="modal-field-container">
                         <p>
                             <label for="name">Ваше имя:</label>
                             <input type="text" name="name" id="name" placeholder="Имя Фамилия">
@@ -286,14 +287,14 @@
                     <p>
                         <label for="letter">Текст письма:</label>
                         <textarea name="letter" id="letter" rows="7" placeholder="В свободной форме"></textarea>
-                    </p>
-                </form> 
-            </div>
-            <div class="modal-button-container">
-                <div class="modal-container">
-                    <button class="btn btn-write-us">Отправить</button>
+                    </p>   
                 </div>
-            </div>
+                <div class="form-button-wrapper">
+                    <div class="modal-container">
+                        <button type="submit" class="btn btn-write-us">Отправить</button>
+                    </div>    
+                </div>
+            </form> 
         </section>
         
         <section class="modal modal-add-cart">
@@ -308,6 +309,8 @@
                 </div>
             </div>
         </section>
-        <script src="js/script.js"></script>
+        <script src="js/script.min.js"></script>
+        <script src="js/add-cart.min.js"></script>
+        <script src="js/map.min.js"></script>
     </body>
 </html>

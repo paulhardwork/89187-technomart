@@ -7,7 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
     <body>
         <header class="page-header">
@@ -92,55 +92,51 @@
                             <fieldset class="field-container">
                                 <legend class="filter-block-head">Производители:</legend>
                                 <p>
+                                    <input class="visually-hidden" type="checkbox" name="bosch" id="bosch" value="bosch" checked disabled>
                                     <label for="bosch">
-                                        <input class="visually-hidden" type="checkbox" name="bosch" id="bosch" value="bosch" checked>
-                                        <span class="checkbox-indicator"></span>
-                                        Bosch
+                                        <span class="checkbox-indicator"></span>Bosch
                                     </label>
+                                    
                                 </p>
                                 <p>
+                                    <input class="visually-hidden" type="checkbox" name="interskol" id="interskol" value="interskol">
                                     <label for="interskol">
-                                        <input class="visually-hidden" type="checkbox" name="interskol" id="interskol" value="interskol">
-                                        <span class="checkbox-indicator"></span>
-                                        Интерскол
+                                        <span class="checkbox-indicator"></span>Интерскол
+                                    </label>
+                                    
+                                </p>
+                                <p>
+                                    <input class="visually-hidden" type="checkbox" name="makita" id="makita" value="makita" checked>
+                                    <label for="makita">
+                                        <span class="checkbox-indicator"></span>Makita
+                                    </label>
+                                    
+                                </p>
+                                <p>
+                                    <input class="visually-hidden" type="checkbox" name="dewalt" id="dewalt" value="dewalt">
+                                    <label for="dewalt">
+                                        <span class="checkbox-indicator"></span>Dewalt
                                     </label>
                                 </p>
                                 <p>
-                                    <label for="makita">
-                                        <input class="visually-hidden" type="checkbox" name="makita" id="makita" value="makita" checked>
-                                        <span class="checkbox-indicator"></span>
-                                        Makita
-                                    </label>  
-                                </p>
-                                <p>
-                                    <label for="dewalt">
-                                        <input class="visually-hidden" type="checkbox" name="dewalt" id="dewalt" value="dewalt">
-                                        <span class="checkbox-indicator"></span>
-                                        Dewalt
-                                    </label> 
-                                </p>
-                                <p>
+                                    <input class="visually-hidden" type="checkbox" name="hitachi" id="hitachi" value="hitachi">
                                     <label for="hitachi">
-                                        <input class="visually-hidden" type="checkbox" name="hitachi" id="hitachi" value="hitachi">
-                                        <span class="checkbox-indicator"></span>
-                                        Hitachi
+                                        <span class="checkbox-indicator"></span>Hitachi
                                     </label>
                                 </p>
                             </fieldset>
                             <fieldset class="field-container">
                                 <legend class="filter-block-head">Питание:</legend>
                                 <p>
+                                    <input class="visually-hidden" type="radio" name="energy" id="accu" value="accu" checked disabled>
                                     <label for="accu">
-                                        <input class="visually-hidden" type="radio" name="energy" id="accu" value="accu">
-                                        <span class="radio-indicator"></span>
-                                        Аккумуляторные
+                                        <span class="radio-indicator"></span>Аккумуляторные
                                     </label>
                                 </p>
                                 <p>
+                                    <input class="visually-hidden" type="radio" name="energy" id="network" value="network">
                                     <label for="network">
-                                        <input class="visually-hidden" type="radio" name="energy" id="network" value="network">
-                                        <span class="radio-indicator"></span>
-                                        Сетевые
+                                        <span class="radio-indicator"></span>Сетевые
                                     </label>
                                 </p>
                             </fieldset>
@@ -188,8 +184,7 @@
                             <div class="products-list-item new-flag">
                                 <img src="img/bosch-bfg2000.jpg" width="218" height="160" alt="Перфоратор BOSCH BFG 2000">
                                 <div class="products-hover-buttons">
-                                    <button class="btn btn-buy" type="button">Купить</button>                             
-                                    <button class="btn btn-tobookmark" type="button">В закладки</button>
+                                    <button class="btn btn-buy" type="button">Купить</button>         <button class="btn btn-tobookmark" type="button">В закладки</button>
                                 </div>
                                 <h3 class="product-name">Перфоратор BOSCH BFG 2000</h3>
                                 <b class="current-price">12500 Р.</b>
@@ -309,12 +304,17 @@
         </footer>
             
         <section class="modal modal-add-cart">
-            <button class="close-btn" type="button">Закрыть окно</button>
-            <p class="add-message">Товар добавлен в корзину!</p>
+            <div class="modal-container add-cart-container">
+                <button class="close-btn" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+                <p class="add-message">Товар добавлен в корзину!</p>
+            </div>
             <div class="modal-button-container">
-                <a class="btn btn-section" href="#">Оформить заказ</a>
-                <a class="btn btn-continue" href="#">Продолжить покупки</a>    
+                <div class="modal-container">
+                    <a class="btn btn-finish-order" href="#">Оформить заказ</a>
+                    <a class="btn btn-continue" href="#">Продолжить покупки</a>    
+                </div>
             </div>
         </section>
+        <script src="js/add-cart.min.js"></script>
     </body>
 </html>
